@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Travelya"
+        tools:targetApi="31">
+        <activity
+            android:name=".TravelMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TravelTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Suggest5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Suggest4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Suggest3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Suggest2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Suggest1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SuggestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <activity
+            android:name=".Beach5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Beach4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Beach3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Beach2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Beach1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Moun5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Moun4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Moun3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Moun2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Moun1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Water6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Water5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Water4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Water3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Water2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Water1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BeachActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MountainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterfallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraGalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Description1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutteamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

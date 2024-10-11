@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".TravelTipsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/traveltipsbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/backtraveltipshome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="traveltipstohome"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/btn_arrow4" />
+
+                <TextView
+                    android:id="@+id/traveltipstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/travel_tips3"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/white_background"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:id="@+id/traveltips_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="180dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="0dp"
+                            app:srcCompat="@drawable/traveltipslogo" />
+
+                        <TextView
+                            android:id="@+id/traveltips_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="30dp"
+                            android:text="Sri Lanka Standard Time is five and a half hours ahead of GMT. (Allowance should be made for summer-time changes in Europe.)\n\nBanks are open from 0900 hrs to 1300 hours Monday to Friday. Some city banks close at 1500 hrs, while some are open on Saturday mornings. It.s easy to withdraw money across the island at ATMs using international credit cards or debit cards.\n\nThere are some important restrictions that apply to photography regarding Buddhist imagery. When you visit a temple or other religious site, remember that photography should not be carried out in a manner causing disrespect. For instance, it is strictly forbidden to be photographed in front of or beside any statues and murals. Note that flash photography can damage old murals.
+\n\nWhen visiting a place of pilgrimage one should prefer to wear clothes that cover the shoulders and knees as a mark of respect for the culture.\n\nIn general the threats to personal security for travellers in Sri Lanka are remarkably small. It is more pleasant to travel with a companion as it is advised not to travel alone especially after dark. The island including the North and East is safe to visit. If you have anything stolen, report it to the tourist Police, ( a special tourist police set up to look after the needs of the tourists. Contact tel Number + 94 11 2382209"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"/>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

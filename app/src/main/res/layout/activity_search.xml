@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".SearchActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/searchtop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/searchback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:onClick="goHome"
+                    android:src="@drawable/back_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/search_location"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="32dp"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:background="@drawable/brown_background"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/searchbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:drawableEnd="@drawable/search_icon"
+                            android:drawablePadding="8dp"
+                            android:padding="8dp"
+                            android:ems="10"
+                            android:textColor="@color/black"
+                            android:textColorHint="#756C6C"
+                            android:background="@drawable/search_edit_backgrond"
+                            android:inputType="textPersonName" />
+<!--                            android:hint="@string/searching_locations"-->
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/white_background"
+                                android:elevation="3dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:background="@drawable/brown_background"
+                                    android:onClick="moun1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/mount1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/sri_pada_adam_s_peak"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="moun2"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/mount2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/pidurutalagala"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="moun3"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/mount3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/kirigalpotta"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="moun4"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/mount4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/hanthana_mountain_range"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="moun5"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/mount5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/rassagala"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:background="@drawable/brown_background"
+                                    android:onClick="waterfall1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/water1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/ravana_ella_falls"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="waterfall2"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/water2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/ramboda_waterfall"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="waterfall3"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/water3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/diyaluma_falls"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="waterfall4"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/water4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/lover_s_leap_falls"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="waterfall5"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/water5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/bomburu_ella_waterfall"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="waterfall6"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/water6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/dunhinda_falls"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:background="@drawable/brown_background"
+                                    android:onClick="beach1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/beach1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/bentota_beach"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="beach2"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/beach2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/mirissa_beach"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="beach3"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/beach3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/hikkaduwa_beach"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="beach4"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/beach4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/mount_lavinia_beach"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.333"
+                                    android:onClick="beach5"
+                                    android:background="@drawable/brown_background"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/beach5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/jungle_beach"
+                                        android:textAlignment="center"
+                                        android:textSize="19sp"
+                                        android:textColor="#FF000000"
+                                        android:textStyle="italic|bold" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

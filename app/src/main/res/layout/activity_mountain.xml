@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".MountainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/mountainback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:onClick="backhome"
+                    app:srcCompat="@drawable/btn_arrow4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bestmountains"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="42dp"
+                    android:text="Best Mountains"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="32dp"
+
+                    android:background="@drawable/white_background"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:background="@drawable/brown_background"
+                        android:onClick="moun1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mount1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Sri Pada / Adam's Peak\nශ්‍රී පාදය / ආදම්ගේ කඳු මුදුන"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="moun2"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mount2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Pidurutalagala\nපිදුරුතලාගල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="moun3"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mount3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Kirigalpotta\nකිරිගල්පොත්ත"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="moun4"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mount4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Hanthana Mountain Range\nහන්තාන කඳු වැටිය"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="moun5"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mount5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Rassagala\nරාස්සගල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "895692283522",
+    "project_id": "travelyaproject-630c2",
+    "storage_bucket": "travelyaproject-630c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895692283522:android:820b85e34f0688e71bde9b",
+        "android_client_info": {
+          "package_name": "com.finalproject.travelya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAYC9djeiFZO7jGRgJyAXnE6axsiV76gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

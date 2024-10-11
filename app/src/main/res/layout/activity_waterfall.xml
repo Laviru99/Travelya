@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".WaterfallActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/waterfallsback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:onClick="backhome"
+                    app:srcCompat="@drawable/btn_arrow4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bestwaterfalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="42dp"
+                    android:text="@string/best_waterfalls"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="32dp"
+
+                    android:background="@drawable/white_background"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:background="@drawable/brown_background"
+                        android:onClick="waterfall1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/water1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Ravana Ella Falls\nරාවණා ඇල්ල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="waterfall2"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/water2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Ramboda Waterfall\nරම්බොඩ දියඇල්ල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="waterfall3"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/water3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Diyaluma Falls\nදියලුම ඇල්ල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="waterfall4"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/water4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Lover's Leap Falls\nආදරවන්තයින්ගේ පිම්ම ඇල්ල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="waterfall5"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/water5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Bomburu Ella Waterfall\nබෝඹුරු ඇල්ල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.333"
+                        android:onClick="waterfall6"
+                        android:background="@drawable/brown_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/water6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Dunhinda Falls\nදුන්හිඳ ඇල්ල"
+                            android:textAlignment="center"
+                            android:textSize="19sp"
+                            android:textColor="#FF000000"
+                            android:textStyle="italic|bold" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
